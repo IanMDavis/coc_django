@@ -44,8 +44,12 @@
   </nav>
 
   <div class="container-fluid">
-     {% block content %}
-     Index page
+      {% block content %}
+      {% if user.is_authenticated %}
+        Welcome to the party, {{request.user.username}}
+      {% else %}
+        Please sign in to join the party
+      {% endif %}
      {% endblock %}
   </div>
 </body>
