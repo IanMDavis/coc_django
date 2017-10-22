@@ -25,7 +25,6 @@ class Character(models.Model):
     max_mp = models.IntegerField(null=True)
     current_sanity = models.IntegerField(null=True)
     max_sanity = models.IntegerField(null=True)
-        
 
     class Meta:
         verbose_name = 'Character'
