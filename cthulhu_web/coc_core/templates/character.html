@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+        <h3>Character page</h3>
+        {% for character in characters %}
+            <br>{{ character.character_name }}
+        {% endfor %}
+  </div>
+</div>
+{% endblock %}
